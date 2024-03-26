@@ -71,6 +71,18 @@ const arrayOfPossibleMessages = [
 	{"message":"putin", "response":"Don't say this name"},
 	{"message":"путин", "response":"Завали пасть"},
 
+	{"message":"mika", "response":"Armenian Oscar Isaac"},
+	{"message":"mikael", "response":"Armenian Oscar Isaac"},
+	{"message":"мика", "response":"Армянский Оскар Айзек"},
+	{"message":"микаэль", "response":"Армянский Оскар Айзек"},
+	{"message":"микаель", "response":"Армянский Оскар Айзек"},
+
+
+
+
+
+
+
 	// Common phrases
 	{"message":"who are you", "response":"Your mother's boyfriend"},
 	{"message":"thank you", "response":"You're not welcome"},
