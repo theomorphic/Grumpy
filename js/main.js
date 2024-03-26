@@ -36,9 +36,9 @@ const arrayOfPossibleMessages = [
 	
 	{"message":"misha", "response":"This is the best man ever"},
 	{"message":"musa", "response":"Fuck you. He's the best!"},
-	{"message":"миша", "response":"Fuck you. He's the best!"},
-	{"message":"uncle misha", "response":"Fuck you. He's the best!"},
-	{"message":"дядя миша", "response":"Fuck you. He's the best!"},
+	{"message":"миша", "response":"Он лучше всех!"},
+	{"message":"uncle misha", "response":"He's the best!"},
+	{"message":"дядя миша", "response":"Это самый лучший человек!"},
 
 	{"message":"egor", "response":"He's dead"},
 	{"message":"los", "response":"He's dead"},
@@ -52,7 +52,9 @@ const arrayOfPossibleMessages = [
 	{"message":"matt", "response":"He watches the Winx fairies"},
 	{"message":"matvey", "response":"He watches the Winx fairies"},
 	{"message":"matthew", "response":"He watches the Winx fairies"},
-	{"message":"тишка", "response":"Он смотрит феи Винкс"},
+	{"message":"отя", "response":"Он смотрит феи Винкс"},
+	{"message":"оття", "response":"Он смотрит феи Винкс"},
+
 
 	{"message":"stacy", "response":"She likes cinnamon buns"},
 	{"message":"стася", "response":"Любит булки с корицей"},
@@ -190,22 +192,34 @@ function clickSendBtn(){
 
 function processMessage(){
 
-	//это именно массив ответов
-	const result =  arrayOfPossibleMessages.filter(val => val.message.includes(user.message.toLocaleLowerCase()));
+	if(user.message.length > 1){
+		//это именно массив ответов
+		const result =  arrayOfPossibleMessages.filter(val => val.message.includes(user.message.toLocaleLowerCase()));
 
-	//ловля ответа не из массива
-	if(result.length > 0){
-		const response = result[0].response;
+		//ловля ответа не из массива
+		if(result.length > 0){
+			const response = result[0].response;
 
-		setTimeout(() => {
-		chatbotSendMessage(response)
-			
-		}, 1000);
+			setTimeout(() => {
+			chatbotSendMessage(response)
+				
+			}, 1000);
+		} else{
+			setTimeout(() => {
+				chatbotSendMessage("I don't give a flying fuck bout that")				
+				}, 1000);
+		} 
+
+	} else if(user.message == "how" || user.message =="что"){
+
+		chatbotSendMessage("Write your stupid question normally");
 	} else{
 		setTimeout(() => {
-			chatbotSendMessage("I don't give a flying fuck bout that")				
+			chatbotSendMessage("Yeah, you now your letters bitch")
 			}, 1000);
+		
 	}
+	
 
 }
 
