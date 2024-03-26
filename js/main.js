@@ -7,14 +7,34 @@ const chatContainer = document.getElementById("chatContainer");
 const user = {message:""};
 
 const arrayOfPossibleMessages = [
+	
+	{"message":"hi", "response":"Eat shit"},
+	{"message":"hey", "response":"Fuck your hey"},
+	{"message":"hello", "response":"Oh no, there's another asshole"},
+	{"message":"sup", "response":"I could care less"},
+	{"message":"bye", "response":"Yeah, disappear"},
+	{"message":"goodbye", "response":"Go away like your father did"},
+	{"message":"see you", "response":"In hell"},
+
+
+
+
+
+	{"message":"who are you", "response":"Your mother's boyfriend"},
+	{"message":"thank you", "response":"You're not welcome"},
+	{"message":"thanks", "response":"Whatever"},
+
 
 	{"message":"you suck", "response":"Fuck you"},
-	{"message":"hi", "response":"Eat shit"},
-	{"message":"who are you", "response":"Your mother's boyfriend"},
-	{"message":"hey", "response":"Fuck your hey"},
 	{"message":"fuck you", "response":"I will"},
-	{"message":"no", "response":"Suck my ass"},
 	{"message":"fuck off", "response":"Go fuck yourself then"},
+	{"message":"bitch", "response":"Don't recall your mother"},
+
+	{"message":"yeah", "response":"Yeah yeah bitch"},
+	{"message":"yes", "response":"Say less"},
+	{"message":"no", "response":"No up to your ass"},
+	{"message":"nope", "response":"You can go suck it my this nope"},
+	{"message":"ok", "response":"Yeah swallow it like that"},
 
 
 
@@ -72,9 +92,11 @@ function sendMessage(messageText){
 
 }
 
+
 sendBtn.addEventListener("click", clickSendBtn);
 
-//эта функция выведена отдельно на случай добавления нажатия enter
+
+// эта функция выведена отдельно на случай добавления нажатия enter
 function clickSendBtn(){
 	if(textbox.value == ""){
 		alert("write some shit first")
@@ -95,12 +117,20 @@ function processMessage(){
 	//это именно массив ответов
 	const result =  arrayOfPossibleMessages.filter(val => val.message.includes(user.message.toLocaleLowerCase()));
 
-	const response = result[0].response;
+	//ловля ответа не из массива
+	if(result.length > 0){
+		const response = result[0].response;
 
-	setTimeout(() => {
-	chatbotSendMessage(response)
-		
-	}, 1000);
+		setTimeout(() => {
+		chatbotSendMessage(response)
+			
+		}, 1000);
+	} else{
+		setTimeout(() => {
+			chatbotSendMessage("I don't give a flying fuck bout that")				
+			}, 1000);
+	}
+
 }
 
 
