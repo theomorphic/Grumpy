@@ -6,6 +6,7 @@ const chatContainer = document.getElementById("chatContainer");
 
 const user = {message:"", counter:0};
 
+
 const arrayOfPossibleMessages = [
 	
 	// Greetings and Goodbyes
@@ -28,9 +29,11 @@ const arrayOfPossibleMessages = [
 	{"message":"???", "response":"Go fuck yourself. will ya?"},
 	{"message":"what?", "response":"fuck off mate"},
 	{"message":"huh", "response":"Man, go touch some grass"},
-	{"message":"huh", "response":"Dude, shut up for fuck's sake"},
+	{"message":"huh?", "response":"Dude, shut up for fuck's sake"},
 	{"message":"about what?", "response":"About your stupid questions!"},
 	{"message":"about what", "response":"About your stupid questions"},
+	{"message":"how are you", "response":"It was great until you came here"},
+
 
 	// Russian
 	{"message":"привет", "response":"Fuck your Russian"},
@@ -102,6 +105,10 @@ const arrayOfPossibleMessages = [
 	{"message":"rude", "response":"How bout rude your ass"},
 	{"message":"shut up", "response":"You better shut your mouth"},
 	{"message":"fine", "response":"Yeah, fine by me also"},
+	{"message":"alright", "response":"It's not. Think bout it"},
+	{"message":"sure", "response":"Don't be so sure bout it"},
+	{"message":"lol", "response":"kek"},
+	{"message":"lmao", "response":"lmao my ass"},
 
 	// Insults
 	{"message":"you suck", "response":"Fuck you"},
@@ -121,6 +128,8 @@ const arrayOfPossibleMessages = [
 	{"message":"nuh", "response":"Nuh up to your ass"},
 	{"message":"nope", "response":"You can go suck this nope"},
 	{"message":"ok", "response":"Yeah swallow it like that"},
+	{"message":"kk", "response":"What the hell is that"},
+
 
 	//Life's meaning
 	{"message":"what's the meaning of life", "response":"42"},
@@ -136,14 +145,14 @@ const arrayOfPossibleMessages = [
 
 ];
 
-// const questionsToAsk = [
-// 	{"question":"What's your favorite color, mediocre?","answer":""},
-// 	{"question":"Are you retired or retarded?","answer":""},
-// 	{"question":"What's your job, mopping floors with your underpants?","answer":""},
+const questionsToAsk = [
+	{"question":"What's your favorite color, mediocre?","answer":""},
+	{"question":"Are you retired or retarded?","answer":""},
+	{"question":"What's your job, mopping floors with your underpants?","answer":""},
 
-// ];
+];
 
-//это на случай задавания вопросов 
+// это на случай задавания вопросов 
 // askQuestion() 
 
 // function askQuestion(){
@@ -221,7 +230,7 @@ function clickSendBtn(){
 	if(textbox.value == ""){
 		alert("WRITE SOME SHIT YOU FUCK")
 	}else{
-		let messageText =  textbox.value;
+		let messageText =  textbox.value.trim();
 		user.message = messageText;
 		sendMessage(messageText);
 		textbox.value = "";
