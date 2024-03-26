@@ -25,6 +25,7 @@ const arrayOfPossibleMessages = [
 	{"message":"where", "response":"It's somewhere, you stupid"},
 	{"message":"when", "response":"When pigs fly"},
 	{"message":"why", "response":"Why not, I could care less"},
+	{"message":"why not", "response":"Why don't you go outside, take some fresh air"},
 	{"message":"??", "response":"Stop bothering me, deepshit"},
 	{"message":"???", "response":"Go fuck yourself. will ya?"},
 	{"message":"what?", "response":"fuck off mate"},
