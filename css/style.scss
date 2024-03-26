@@ -36,7 +36,20 @@ body{
 	#chatContainer{
 		display: flex;
 		flex-direction: column;
-		justify-content: baseline;
+		justify-content: baseline;	
 
 	}
+
+	
 }
+
+@media(max-width:768px){
+
+	.hints{
+		h5{
+			display: none;
+
+		}
+	}
+}
+

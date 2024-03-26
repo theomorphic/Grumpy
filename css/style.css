@@ -35,4 +35,9 @@ body {
     flex-direction: column;
     justify-content: baseline;
   }
+}
+@media (max-width: 768px) {
+  .hints h5 {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
