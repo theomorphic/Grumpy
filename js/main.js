@@ -19,6 +19,7 @@ const arrayOfPossibleMessages = [
 
 	// Russian
 	{"message":"привет", "response":"Fuck your Russian"},
+	{"message":"пока", "response":"Fuck your Russian"},
 	{"message":"ку", "response":"Speak the King's"},
 	{"message":"лох", "response":"Speak the real language!"},
 	{"message":"нуб", "response":"You're dumb"},
@@ -36,7 +37,9 @@ const arrayOfPossibleMessages = [
 	{"message":"misha", "response":"This is the best man ever"},
 	{"message":"musa", "response":"Fuck you. He's the best!"},
 	{"message":"миша", "response":"Fuck you. He's the best!"},
-	
+	{"message":"uncle misha", "response":"Fuck you. He's the best!"},
+	{"message":"дядя миша", "response":"Fuck you. He's the best!"},
+
 	{"message":"egor", "response":"He's dead"},
 	{"message":"los", "response":"He's dead"},
 	{"message":"лось", "response":"He's dead"},
@@ -46,29 +49,34 @@ const arrayOfPossibleMessages = [
 	{"message":"андрюха", "response":"Yeah, forget about 'im"},
 
 	{"message":"матвей", "response":"Он смотрит феи Винкс"},
-	{"message":"matt", "response":"Он смотрит феи Винкс"},
-	{"message":"matvey", "response":"Он смотрит феи Винкс"},
-	{"message":"matthew", "response":"Он смотрит феи Винкс"},
+	{"message":"matt", "response":"He watches the Winx fairies"},
+	{"message":"matvey", "response":"He watches the Winx fairies"},
+	{"message":"matthew", "response":"He watches the Winx fairies"},
 	{"message":"тишка", "response":"Он смотрит феи Винкс"},
 
 	{"message":"stacy", "response":"She likes cinnamon buns"},
-	{"message":"стася", "response":"She likes cinnamon buns"},
+	{"message":"стася", "response":"Любит булки с корицей"},
 
-	{"message":"саша", "response":"She's cool, living in St. Petersburg"},
+	{"message":"саша", "response":"Живёт себе в Питере"},
 	{"message":"sasha", "response":"She's cool, living in St. Petersburg"},
 
 	{"message":"igor", "response":"Igor is the best"},
 	{"message":"игорь", "response":"Игорь крутой"},
 
 	{"message":"злата", "response":"Её зовут Игорь"},
-	{"message":"zlata", "response":"Её зовут Игорь"},
+	{"message":"zlata", "response":"Her name is Igor"},
 	{"message":"настя", "response":"Её зовут Игорь"},
-	{"message":"nasty", "response":"Её зовут Игорь"},
+	{"message":"nasty", "response":"Her name is Igor"},
+
+	{"message":"putin", "response":"Don't say this name"},
+	{"message":"путин", "response":"Завали пасть"},
 
 	// Common phrases
 	{"message":"who are you", "response":"Your mother's boyfriend"},
 	{"message":"thank you", "response":"You're not welcome"},
 	{"message":"thanks", "response":"Whatever"},
+	{"message":"what", "response":"fuck off mate"},
+	{"message":"what?", "response":"fuck off mate"},
 
 	// Insults
 	{"message":"you suck", "response":"Fuck you"},
@@ -188,6 +196,7 @@ function processMessage(){
 	}
 
 }
+
 
 
 
