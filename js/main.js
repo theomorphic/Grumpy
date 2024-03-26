@@ -4,7 +4,7 @@ const sendBtn = document.getElementById("sendBtn");
 const textbox = document.getElementById("textbox");
 const chatContainer = document.getElementById("chatContainer");
 
-const user = {message:""};
+const user = {message:"", counter:0};
 
 const arrayOfPossibleMessages = [
 	
@@ -16,6 +16,21 @@ const arrayOfPossibleMessages = [
 	{"message":"bye", "response":"Yeah, disappear"},
 	{"message":"goodbye", "response":"Go away like your father did"},
 	{"message":"see you", "response":"In hell"},
+
+	// Questions
+	{"message":"how", "response":"How bout these nuts"},
+	{"message":"what", "response":"Whatsoever, I don't care"},
+	{"message":"who", "response":"Who? Ask yourself that shit"},
+	{"message":"where", "response":"It's somewhere, you stupid"},
+	{"message":"when", "response":"When pigs fly"},
+	{"message":"why", "response":"Why not, I could care less"},
+	{"message":"??", "response":"Stop bothering me, deepshit"},
+	{"message":"???", "response":"Go fuck yourself. will ya?"},
+	{"message":"what?", "response":"fuck off mate"},
+	{"message":"huh", "response":"Man, go touch some grass"},
+	{"message":"huh", "response":"Dude, shut up for fuck's sake"},
+	{"message":"about what?", "response":"About your stupid questions!"},
+	{"message":"about what", "response":"About your stupid questions"},
 
 	// Russian
 	{"message":"привет", "response":"Fuck your Russian"},
@@ -33,6 +48,7 @@ const arrayOfPossibleMessages = [
 	{"message":"леха", "response":"He's worst then mushrooms"},
 	{"message":"алёша", "response":"Yeah, that's sweet"},
 	{"message":"алеша", "response":"Yeah, that's sweet"},
+	{"message":"Alex", "response":"You mean Alexa"},
 	
 	{"message":"misha", "response":"This is the best man ever"},
 	{"message":"musa", "response":"Fuck you. He's the best!"},
@@ -54,7 +70,6 @@ const arrayOfPossibleMessages = [
 	{"message":"matthew", "response":"He watches the Winx fairies"},
 	{"message":"отя", "response":"Он смотрит феи Винкс"},
 	{"message":"оття", "response":"Он смотрит феи Винкс"},
-
 
 	{"message":"stacy", "response":"She likes cinnamon buns"},
 	{"message":"стася", "response":"Любит булки с корицей"},
@@ -79,31 +94,32 @@ const arrayOfPossibleMessages = [
 	{"message":"микаэль", "response":"Армянский Оскар Айзек"},
 	{"message":"микаель", "response":"Армянский Оскар Айзек"},
 
-
-
-
-
-
-
 	// Common phrases
 	{"message":"who are you", "response":"Your mother's boyfriend"},
 	{"message":"thank you", "response":"You're not welcome"},
 	{"message":"thanks", "response":"Whatever"},
-	{"message":"what", "response":"fuck off mate"},
-	{"message":"what?", "response":"fuck off mate"},
+	{"message":"you're rude", "response":"Shut up"},
+	{"message":"rude", "response":"How bout rude your ass"},
+	{"message":"shut up", "response":"You better shut your mouth"},
+	{"message":"fine", "response":"Yeah, fine by me also"},
 
 	// Insults
 	{"message":"you suck", "response":"Fuck you"},
-	{"message":"fuck you", "response":"I will"},
+	{"message":"fuck you", "response":"Better fuck you"},
 	{"message":"fuck off", "response":"Go fuck yourself then"},
 	{"message":"bitch", "response":"Don't recall your mother"},
+	{"message":"you bitch", "response":"Nice comeback, smartass"},
+	{"message":"you are bitch", "response":"Nice comeback, smartass"},
+	{"message":"you're bitch", "response":"Nice comeback, smartass"},
+	{"message":"youre bitch", "response":"Nice comeback, smartass"},
 	{"message":"lox", "response":"That's who you are"},
 	
 	// Short responses
 	{"message":"yeah", "response":"Yeah yeah bitch"},
 	{"message":"yes", "response":"Say less"},
 	{"message":"no", "response":"No up to your ass"},
-	{"message":"nope", "response":"You can go suck it my this nope"},
+	{"message":"nuh", "response":"Nuh up to your ass"},
+	{"message":"nope", "response":"You can go suck this nope"},
 	{"message":"ok", "response":"Yeah swallow it like that"},
 
 	//Life's meaning
@@ -120,10 +136,33 @@ const arrayOfPossibleMessages = [
 
 ];
 
+// const questionsToAsk = [
+// 	{"question":"What's your favorite color, mediocre?","answer":""},
+// 	{"question":"Are you retired or retarded?","answer":""},
+// 	{"question":"What's your job, mopping floors with your underpants?","answer":""},
+
+// ];
+
+//это на случай задавания вопросов 
+// askQuestion() 
+
+// function askQuestion(){
+
+// 	if(questionsToAsk.length > user.counter){
+// 		setTimeout(function(){
+
+// 			chatbotSendMessage(questionsToAsk[user.counter].question);
+// 			user.counter++;
+// 		}, 1000);
+	
+// 		console.log(questionsToAsk[user.counter-1]);
+// 	}
+// }
+
 setTimeout(() => {
 chatbotSendMessage("Sup you moron. What they call you?")
 	
-}, 1000);
+}, 2000);
 
 function chatbotSendMessage(messageText){
 	const messageElement = document.createElement("div");
@@ -145,6 +184,9 @@ function chatbotSendMessage(messageText){
 	messageElement.animate([{easing:"ease-in", opacity: 0.4},{opacity:1}], {duration: 700});
 
 	chatContainer.appendChild(messageElement);
+
+	//скроллим вниз по сообщениям
+	chatContainer.scrollTop = chatContainer.scrollHeight;
 }
 function sendMessage(messageText){
 
@@ -157,9 +199,6 @@ function sendMessage(messageText){
 	messageElement.style.backgroundColor = "rgb(141, 193, 238)";
 	messageElement.style.color = "#fff";
 
-
-
-
 	messageElement.innerHTML = 
 	"<span>You: </span>"+
 	"<span style="+"margin-top: 10px; padding: 10px;"+">"+ messageText +"</span>"
@@ -167,6 +206,9 @@ function sendMessage(messageText){
 	messageElement.animate([{easing:"ease-in", opacity: 0.4},{opacity:1}], {duration: 700}); //анимация с появлением
 	
 	chatContainer.appendChild(messageElement);
+
+	//скроллим вниз по сообщениям
+	chatContainer.scrollTop = chatContainer.scrollHeight;
 
 }
 
@@ -184,6 +226,9 @@ function clickSendBtn(){
 		sendMessage(messageText);
 		textbox.value = "";
 
+		// questionsToAsk[user.counter-1].answer = user.message;
+
+		// askQuestion();
 		processMessage();
 
 	}
@@ -212,17 +257,29 @@ function processMessage(){
 
 	} else if(user.message == "how" || user.message =="что"){
 
-		chatbotSendMessage("Write your stupid question normally");
+		setTimeout(() => {
+			chatbotSendMessage("Write your stupid question normally");
+
+		}, 1000);
 	} else{
 		setTimeout(() => {
 			chatbotSendMessage("Yeah, you now your letters bitch")
-			}, 1000);
+		}, 1000);
 		
 	}
 	
 
 }
 
+//ивент для нажатия на энтер, это 13 клавиша
+//он поставлен на текстовое поле, а не на кнопку, как я изначально пытался
+
+textbox.addEventListener("keypress", function(e){
+
+	if(e.which == 13){
+		clickSendBtn();
+	}
+});
 
 
 
