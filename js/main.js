@@ -22,13 +22,48 @@ const arrayOfPossibleMessages = [
 	{"message":"ку", "response":"Speak the King's"},
 	{"message":"лох", "response":"Speak the real language!"},
 	{"message":"нуб", "response":"You're dumb"},
+	{"message":"дурак", "response":"Eat shit you Russian scum"},
 
 	// Name-dropping
 	{"message":"grumpy", "response":"Keep my name out of your dirty mouth"},
-	{"message":"lox", "response":"That's who you are"},
+	{"message":"грампи", "response":"Keep my name out of your dirty mouth"},
+	
 	{"message":"lexa", "response":"He's worst then mushrooms"},
+	{"message":"леха", "response":"He's worst then mushrooms"},
+	{"message":"алёша", "response":"Yeah, that's sweet"},
+	{"message":"алеша", "response":"Yeah, that's sweet"},
+	
 	{"message":"misha", "response":"This is the best man ever"},
 	{"message":"musa", "response":"Fuck you. He's the best!"},
+	{"message":"миша", "response":"Fuck you. He's the best!"},
+	
+	{"message":"egor", "response":"He's dead"},
+	{"message":"los", "response":"He's dead"},
+	{"message":"лось", "response":"He's dead"},
+	{"message":"elk", "response":"He's dead"},
+	{"message":"moose", "response":"He's dead"},
+
+	{"message":"андрюха", "response":"Yeah, forget about 'im"},
+
+	{"message":"матвей", "response":"Он смотрит феи Винкс"},
+	{"message":"matt", "response":"Он смотрит феи Винкс"},
+	{"message":"matvey", "response":"Он смотрит феи Винкс"},
+	{"message":"matthew", "response":"Он смотрит феи Винкс"},
+	{"message":"тишка", "response":"Он смотрит феи Винкс"},
+
+	{"message":"stacy", "response":"She likes cinnamon buns"},
+	{"message":"стася", "response":"She likes cinnamon buns"},
+
+	{"message":"саша", "response":"She's cool, living in St. Petersburg"},
+	{"message":"sasha", "response":"She's cool, living in St. Petersburg"},
+
+	{"message":"igor", "response":"Igor is the best"},
+	{"message":"игорь", "response":"Игорь крутой"},
+
+	{"message":"злата", "response":"Её зовут Игорь"},
+	{"message":"zlata", "response":"Её зовут Игорь"},
+	{"message":"настя", "response":"Её зовут Игорь"},
+	{"message":"nasty", "response":"Её зовут Игорь"},
 
 	// Common phrases
 	{"message":"who are you", "response":"Your mother's boyfriend"},
@@ -40,13 +75,25 @@ const arrayOfPossibleMessages = [
 	{"message":"fuck you", "response":"I will"},
 	{"message":"fuck off", "response":"Go fuck yourself then"},
 	{"message":"bitch", "response":"Don't recall your mother"},
-
+	{"message":"lox", "response":"That's who you are"},
+	
 	// Short responses
 	{"message":"yeah", "response":"Yeah yeah bitch"},
 	{"message":"yes", "response":"Say less"},
 	{"message":"no", "response":"No up to your ass"},
 	{"message":"nope", "response":"You can go suck it my this nope"},
 	{"message":"ok", "response":"Yeah swallow it like that"},
+
+	//Life's meaning
+	{"message":"what's the meaning of life", "response":"42"},
+	{"message":"whats the meaning of life", "response":"42"},
+	{"message":"what is the meaning of life", "response":"42"},
+	{"message":"what s the meaning of life", "response":"42"},
+	{"message":"life meaning", "response":"42"},
+	{"message":"life's meaning", "response":"42"},
+	{"message":"life s meaning", "response":"42"},
+	{"message":"смысл жизни", "response":"42"},
+	{"message":"в чем смысл жизни", "response":"42"},
 
 
 ];
