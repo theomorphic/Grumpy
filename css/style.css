@@ -21,4 +21,18 @@ body {
 }
 #grumpy {
   animation: spin 20s linear 0s infinite;
+}
+
+@media (max-height: 900px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+  #chatContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+  }
 }/*# sourceMappingURL=style.css.map */
