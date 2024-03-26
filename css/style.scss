@@ -13,3 +13,11 @@ body{
 	
 }
 
+@keyframes spin {
+	from {transform:rotate(0deg);}
+	to {transform:rotate(360deg);}
+}
+
+#grumpy{
+	animation: spin 20s linear 0s infinite;
+}

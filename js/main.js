@@ -8,6 +8,7 @@ const user = {message:""};
 
 const arrayOfPossibleMessages = [
 	
+	// Greetings and Goodbyes
 	{"message":"hi", "response":"Eat shit"},
 	{"message":"hey", "response":"Fuck your hey"},
 	{"message":"hello", "response":"Oh no, there's another asshole"},
@@ -16,28 +17,36 @@ const arrayOfPossibleMessages = [
 	{"message":"goodbye", "response":"Go away like your father did"},
 	{"message":"see you", "response":"In hell"},
 
+	// Russian
+	{"message":"привет", "response":"Fuck your Russian"},
+	{"message":"ку", "response":"Speak the King's"},
+	{"message":"лох", "response":"Speak the real language!"},
+	{"message":"нуб", "response":"You're dumb"},
 
+	// Name-dropping
+	{"message":"grumpy", "response":"Keep my name out of your dirty mouth"},
+	{"message":"lox", "response":"That's who you are"},
+	{"message":"lexa", "response":"He's worst then mushrooms"},
+	{"message":"misha", "response":"This is the best man ever"},
+	{"message":"musa", "response":"Fuck you. He's the best!"},
 
-
-
+	// Common phrases
 	{"message":"who are you", "response":"Your mother's boyfriend"},
 	{"message":"thank you", "response":"You're not welcome"},
 	{"message":"thanks", "response":"Whatever"},
 
-
+	// Insults
 	{"message":"you suck", "response":"Fuck you"},
 	{"message":"fuck you", "response":"I will"},
 	{"message":"fuck off", "response":"Go fuck yourself then"},
 	{"message":"bitch", "response":"Don't recall your mother"},
 
+	// Short responses
 	{"message":"yeah", "response":"Yeah yeah bitch"},
 	{"message":"yes", "response":"Say less"},
 	{"message":"no", "response":"No up to your ass"},
 	{"message":"nope", "response":"You can go suck it my this nope"},
 	{"message":"ok", "response":"Yeah swallow it like that"},
-
-
-
 
 
 ];
@@ -99,7 +108,7 @@ sendBtn.addEventListener("click", clickSendBtn);
 // эта функция выведена отдельно на случай добавления нажатия enter
 function clickSendBtn(){
 	if(textbox.value == ""){
-		alert("write some shit first")
+		alert("WRITE SOME SHIT YOU FUCK")
 	}else{
 		let messageText =  textbox.value;
 		user.message = messageText;

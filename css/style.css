@@ -9,4 +9,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#grumpy {
+  animation: spin 20s linear 0s infinite;
 }/*# sourceMappingURL=style.css.map */
