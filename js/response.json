@@ -131,6 +131,13 @@
 	{"message":"смысл жизни", "response":"42"},
 	{"message":"в чем смысл жизни", "response":"42"},
 
+	{"message":"i like this", "response":"Of course you do"},
+	{"message":"i don't like this", "response":"Like I care. Grow up"},
+
+	
+	{"message":"god", "response":"<a href='https://github.com/theomorphic' target='_blank'>This is God</a>"},
+	{"message":"creator", "response":"<a href='https://theomorphic.github.io/links' target='_blank'>This is Him</a>"},
+	{"message":"music", "response":"<a href='https://youtu.be/dQw4w9WgXcQ?si=wF6lDfKhCFvHU2Sx' target='_blank'>Listen to this</a>"},
 	{"message":"nothing", "response":"Nothing in your brain"}
 
 

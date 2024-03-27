@@ -11,6 +11,14 @@ body {
   justify-content: center;
 }
 
+a {
+  color: #fff;
+}
+
+a:hover {
+  font-size: 17px;
+}
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
