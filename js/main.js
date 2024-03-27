@@ -7,7 +7,7 @@ const chatContainer = document.getElementById("chatContainer");
 const user = {message:"", counter:0};
 
 
-import arrayOfPossibleMessages from "./response.json" with{type: "json"};
+import arrayOfPossibleMessages from "./response.json" assert{type: "json"};
 
 setTimeout(() => {
 chatbotSendMessage("Sup you moron. What they call you?")
