@@ -54,6 +54,13 @@
 	{"message":"elk", "response":"He's dead"},
 	{"message":"moose", "response":"He's dead"},
 
+	{"message":"ярослав", "response":"Such a nice guy"},
+	{"message":"ярик", "response":"Oh, that's cool"},
+	{"message":"yarman", "response":"Oh, that's a cool name"},
+	{"message":"Yaroslav", "response":"Very Russian name"},
+	{"message":"Yarik", "response":"No way. You suck"},
+
+
 	{"message":"андрюха", "response":"Yeah, forget about 'im"},
 
 	{"message":"матвей", "response":"Он смотрит феи Винкс"},
