@@ -76,9 +76,6 @@ function clickSendBtn(){
 		sendMessage(messageText);
 		textbox.value = "";
 
-		// questionsToAsk[user.counter-1].answer = user.message;
-
-		// askQuestion();
 		processMessage();
 
 	}

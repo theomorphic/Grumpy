@@ -1,4 +1,6 @@
 const table = {
+
+	//Greetings and Goodbyes
 	"hi": "Eat shit",
 	"hey": "Fuck your hey",
 	"hello": "Oh no, there's another asshole",
@@ -7,6 +9,7 @@ const table = {
 	"goodbye": "Go away like your father did",
 	"see you": "In hell",
 
+	//Short Questions
 	"how": "How bout these nuts",
 	"what": "Whatsoever, I don't care",
 	"who": "Who? Ask yourself that shit",
@@ -23,7 +26,7 @@ const table = {
 	"about what": "About your stupid questions",
 	"how are you": "It was great until you came here",
 
-
+	//Russian
 	"привет": "Fuck your Russian",
 	"пока": "Fuck your Russian",
 	"ку": "Speak the King's",
@@ -31,7 +34,7 @@ const table = {
 	"нуб": "You're dumb",
 	"дурак": "Eat shit you Russian scum",
 
-
+	//Name-dropping
 	"grumpy": "Keep my name out of your dirty mouth",
 	"грампи": "Keep my name out of your dirty mouth",
 
@@ -92,6 +95,7 @@ const table = {
 	"микаель": "Армянский Оскар Айзек",
 
 
+	//Common phrases
 	"who are you": "Your mother's boyfriend",
 	"thank you": "You're not welcome",
 	"thanks": "Whatever",
@@ -103,8 +107,15 @@ const table = {
 	"sure": "Don't be so sure bout it",
 	"lol": "kek",
 	"lmao": "lmao my ass",
+	"i like this": "Of course you do",
+	"i don't like this": "Like I care. Grow up",
+	"you": "Me what?",
+	"you are": "Oh yeah? I'll fuck you up",
+	"and you": "Me? I'm your mother's fucker",
+	"and you?": "Me? I'm your mother's fucker",
+	
 
-
+	//Insults
 	"you suck": "Fuck you",
 	"fuck you": "Better fuck you",
 	"fuck off": "Go fuck yourself then",
@@ -114,18 +125,35 @@ const table = {
 	"you're bitch": "Nice comeback, smartass",
 	"youre bitch": "Nice comeback, smartass",
 	"lox": "That's who you are",
+	"fuck": "Do you kiss your mama with that mouth?",
+	"shit": "Shove it up your ass",
+	"ass": "I bet you love it",
+	"dick": "Go suck one",
+	"suck my dick": "I don't want to compete with you",
+	"go fuck yourself": "Better fuck you tho",
+	"go fuck your shit": "That's what you call your father",
+	"crazy": "Maybe. But you're just shit",
+	"you are crazy": "Maybe. But you're just shit",
 
-
+	
+	//Short Responses
 	"yeah": "Yeah yeah bitch",
 	"yes": "Say less",
 	"no": "No up to your ass",
+	"no no": "Look at this nono piece of shit",
 	"nuh": "Nuh up to your ass",
 	"nope": "You can go suck this nope",
 	"ok": "Yeah swallow it like that",
 	"kk": "What the hell is that",
 	"oh no": "Don't be such a poser",
+	"no you": "Yeah yeah. keep saing that",
+	"no, you": "Yeah yeah. keep saing that",
+	"and": "And what?",
+	"and?": "And what?",
+	"oh": "Oh no, offended already? Crybaby",
 
 
+	//Meaning of life
 	"what's the meaning of life": "42",
 	"whats the meaning of life": "42",
 	"what is the meaning of life": "42",
@@ -136,9 +164,7 @@ const table = {
 	"смысл жизни": "42",
 	"в чем смысл жизни": "42",
 
-	"i like this": "Of course you do",
-	"i don't like this": "Like I care. Grow up",
-
+	//Links
 	"god": "<a href='https://github.com/theomorphic' target='_blank'>This is God</a>",
 	"creator": "<a href='https://theomorphic.github.io/links' target='_blank'>This is Him</a>",
 	"music": "<a href='https://youtu.be/dQw4w9WgXcQ?si=wF6lDfKhCFvHU2Sx' target='_blank'>Listen to this</a>",
