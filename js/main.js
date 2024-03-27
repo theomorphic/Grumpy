@@ -7,11 +7,11 @@ const chatContainer = document.getElementById("chatContainer");
 const user = {message:"", counter:0};
 
 
-import arrayOfPossibleMessages from "./response.json" assert{type: "json"};
+import {table as responseTable} from "./response.js";
 
 setTimeout(() => {
 chatbotSendMessage("Sup you moron. What they call you?")
-	
+
 }, 2000);
 
 function chatbotSendMessage(messageText){
@@ -27,7 +27,7 @@ function chatbotSendMessage(messageText){
 
 
 
-	messageElement.innerHTML = 
+	messageElement.innerHTML =
 	"<span>Grumpy: </span>"+
 	"<span style="+"margin-top: 10px; padding: 10px;"+">"+ messageText +"</span>"
 
@@ -49,12 +49,12 @@ function sendMessage(messageText){
 	messageElement.style.backgroundColor = "rgb(141, 193, 238)";
 	messageElement.style.color = "#fff";
 
-	messageElement.innerHTML = 
+	messageElement.innerHTML =
 	"<span>You: </span>"+
 	"<span style="+"margin-top: 10px; padding: 10px;"+">"+ messageText +"</span>"
-	
+
 	messageElement.animate([{easing:"ease-in", opacity: 0.4},{opacity:1}], {duration: 700}); //анимация с появлением
-	
+
 	chatContainer.appendChild(messageElement);
 
 	//скроллим вниз по сообщениям
@@ -90,23 +90,21 @@ function processMessage(){
 
 	let lowUser = user.message.toLocaleLowerCase();
 
-	if(user.message.length > 1){
-		//это именно массив ответов
-		const result =  arrayOfPossibleMessages.filter(val => val.message.includes(user.message.toLocaleLowerCase()));
+	if(lowUser.length > 1){
 
 		//ловля ответа не из массива
-		if(result.length > 0){
-			const response = result[0].response;
+		if(lowUser in responseTable){
+			const response = responseTable[lowUser];
 
 			setTimeout(() => {
 			chatbotSendMessage(response)
-				
+
 			}, 1000);
 		} else{
 			setTimeout(() => {
-				chatbotSendMessage("I don't give a flying fuck bout that")				
+				chatbotSendMessage("I don't give a flying fuck bout that")
 				}, 1000);
-		} 
+		}
 
 	} else if(user.message == "how" || user.message =="что"){
 
@@ -118,8 +116,8 @@ function processMessage(){
 		setTimeout(() => {
 			chatbotSendMessage("Yeah, you now your letters bitch")
 		}, 1000);
-		
-	} 
+
+	}
 
 	if(lowUser == "dwarf"||lowUser == "you are dwarf"||lowUser == "you're dwarf"||lowUser == "youre dwarf"||lowUser == "you are a dwarf"||lowUser == "you're a dwarf"||lowUser == "youre a dwarf"||lowUser == "you dwarf"||lowUser == "you a dwarf"||lowUser == "you a dwarf!"||lowUser == "dwarf!"||lowUser == "you are dwarf!"||lowUser == "you are a dwarf!"||lowUser == "you dwarf!"||lowUser == "you are fucking dwarf!"||lowUser == "you are fucking dwarf"){
 		setTimeout(() => {
@@ -144,7 +142,7 @@ function processMessage(){
 			document.getElementById("media").style.display = "flex";
 			document.getElementById("inputGroup").style.display = "";
 			document.getElementById("container").style.backgroundColor = "#fff";
-			
+
 			chatContainer.style.display = "";
 
 
@@ -152,10 +150,10 @@ function processMessage(){
 
 			chatbotSendMessage("Don't you ever call me like that!")
 
-			
+
 		}, 7000);
 	}
-	
+
 
 }
 
