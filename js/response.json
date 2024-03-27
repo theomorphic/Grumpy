@@ -32,6 +32,7 @@
 	{"message":"нуб", "response":"You're dumb"},
 	{"message":"дурак", "response":"Eat shit you Russian scum"},
 
+
 	{"message":"grumpy", "response":"Keep my name out of your dirty mouth"},
 	{"message":"грампи", "response":"Keep my name out of your dirty mouth"},
 	
@@ -39,7 +40,7 @@
 	{"message":"леха", "response":"He's worst then mushrooms"},
 	{"message":"алёша", "response":"Yeah, that's sweet"},
 	{"message":"алеша", "response":"Yeah, that's sweet"},
-	{"message":"Alex", "response":"You mean Alexa"},
+	{"message":"alex", "response":"You mean Alexa"},
 	
 	{"message":"misha", "response":"This is the best man ever"},
 	{"message":"musa", "response":"Fuck you. He's the best!"},
@@ -85,6 +86,7 @@
 	{"message":"микаэль", "response":"Армянский Оскар Айзек"},
 	{"message":"микаель", "response":"Армянский Оскар Айзек"},
 
+
 	{"message":"who are you", "response":"Your mother's boyfriend"},
 	{"message":"thank you", "response":"You're not welcome"},
 	{"message":"thanks", "response":"Whatever"},
@@ -97,6 +99,7 @@
 	{"message":"lol", "response":"kek"},
 	{"message":"lmao", "response":"lmao my ass"},
 
+
 	{"message":"you suck", "response":"Fuck you"},
 	{"message":"fuck you", "response":"Better fuck you"},
 	{"message":"fuck off", "response":"Go fuck yourself then"},
@@ -107,6 +110,7 @@
 	{"message":"youre bitch", "response":"Nice comeback, smartass"},
 	{"message":"lox", "response":"That's who you are"},
 	
+
 	{"message":"yeah", "response":"Yeah yeah bitch"},
 	{"message":"yes", "response":"Say less"},
 	{"message":"no", "response":"No up to your ass"},
@@ -117,7 +121,6 @@
 	{"message":"oh no", "response":"Don't be such a poser"},
 
 
-
 	{"message":"what's the meaning of life", "response":"42"},
 	{"message":"whats the meaning of life", "response":"42"},
 	{"message":"what is the meaning of life", "response":"42"},
@@ -126,7 +129,10 @@
 	{"message":"life's meaning", "response":"42"},
 	{"message":"life s meaning", "response":"42"},
 	{"message":"смысл жизни", "response":"42"},
-	{"message":"в чем смысл жизни", "response":"42"}
+	{"message":"в чем смысл жизни", "response":"42"},
+
+	{"message":"nothing", "response":"Nothing in your brain"}
+
 
 
 ]

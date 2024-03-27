@@ -1,6 +1,5 @@
 
 
-const body = document.getElementById("body");
 const sendBtn = document.getElementById("sendBtn");
 const textbox = document.getElementById("textbox");
 const chatContainer = document.getElementById("chatContainer");
@@ -11,28 +10,6 @@ const user = {message:"", counter:0};
 import arrayOfPossibleMessages from "./response.json" assert{type: "json"};
 
 
-// const questionsToAsk = [
-// 	{"question":"What's your favorite color, mediocre?","answer":""},
-// 	{"question":"Are you retired or retarded?","answer":""},
-// 	{"question":"What's your job, mopping floors with your underpants?","answer":""},
-
-// ];
-
-// это на случай задавания вопросов 
-// askQuestion() 
-
-// function askQuestion(){
-
-// 	if(questionsToAsk.length > user.counter){
-// 		setTimeout(function(){
-
-// 			chatbotSendMessage(questionsToAsk[user.counter].question);
-// 			user.counter++;
-// 		}, 1000);
-	
-// 		console.log(questionsToAsk[user.counter-1]);
-// 	}
-// }
 
 setTimeout(() => {
 chatbotSendMessage("Sup you moron. What they call you?")
@@ -110,7 +87,10 @@ function clickSendBtn(){
 };
 
 
+
 function processMessage(){
+
+	let lowUser = user.message.toLocaleLowerCase();
 
 	if(user.message.length > 1){
 		//это именно массив ответов
@@ -143,7 +123,7 @@ function processMessage(){
 		
 	} 
 
-	if(user.message == "dwarf"||user.message == "you are dwarf"||user.message == "you're dwarf"||user.message == "youre dwarf"||user.message == "you are a dwarf"||user.message == "you're a dwarf"||user.message == "youre a dwarf"||user.message == "you dwarf"||user.message == "you a dwarf"||user.message == "you a dwarf!"||user.message == "dwarf!"||user.message == "you are dwarf!"||user.message == "you are a dwarf!"||user.message == "you dwarf!"){
+	if(lowUser == "dwarf"||lowUser == "you are dwarf"||lowUser == "you're dwarf"||lowUser == "youre dwarf"||lowUser == "you are a dwarf"||lowUser == "you're a dwarf"||lowUser == "youre a dwarf"||lowUser == "you dwarf"||lowUser == "you a dwarf"||lowUser == "you a dwarf!"||lowUser == "dwarf!"||lowUser == "you are dwarf!"||lowUser == "you are a dwarf!"||lowUser == "you dwarf!"||lowUser == "you are fucking dwarf!"||lowUser == "you are fucking dwarf"){
 		setTimeout(() => {
 			chatbotSendMessage("Wait a minute")
 		}, 2000);
