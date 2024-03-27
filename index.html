@@ -12,12 +12,12 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
-<body style="background-color: rgb(141, 193, 238);">
+<body style="background-color: rgb(141, 193, 238);" id="body">
 
 	<!-- style="margin: 1.852vh -->
-	<div class="container"; style="background-color: #fff; padding: 10px; border-radius: 5px;">
-		<h1 class="text-center">Grumpiest Chatbot Ever</h1>
-		<div class="media" style="display: flex; flex-direction: row; justify-content: space-between; margin: 20px; background-color: #fafafa; border-radius: 3px;">
+	<div class="container"; id="container" style="background-color: #fff; padding: 10px; border-radius: 5px;">
+		<h1 class="text-center" id="h1">Grumpiest Chatbot Ever</h1>
+		<div class="media" id="media" style="display: flex; flex-direction: row; justify-content: space-between; margin: 20px; background-color: #fafafa; border-radius: 3px;">
 			<div style="display: flex; flex-direction: row; justify-content: baseline; align-items: center; gap: 20px;">
 				<img class="rounded-circle float-left img-thumbnail" id="grumpy" width="150px" src="./img/grumpy.png" alt="..." draggable="false">
 				<div class="media-body">
@@ -26,9 +26,8 @@
 				</div>
 			</div>
 			
-			<div class="hints" style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-right: 2.60vw;">
-				<h5 style="font-style: italic;">He's old and grumpy.</h5>
-				<h5 style="font-style: italic;">Try not to get offended!</h5>
+			<div class="hints" id="hints" style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-right: 2.60vw;">
+				<h5 style="font-style: italic;">Don't call him a <span style="color: #a11148b6;">dwarf</span>!</h5>
 			</div>
 		</div>
 
@@ -54,7 +53,7 @@
 
 		</div>
 		
-		<div class="input-group">
+		<div class="input-group" id="inputGroup">
 			<input id="textbox" class="form-control" type="text">
 	
 			<div class="input-group-append">
@@ -74,6 +73,6 @@
 
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-	<script src="./js/main.js"></script>
+	<script src="./js/main.js" type="module"></script>
 </body>
 </html>
