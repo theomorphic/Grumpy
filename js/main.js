@@ -103,12 +103,6 @@ function processMessage(){
 				}, 1000);
 		}
 
-	} else if(user.message == "how" || user.message =="что"){
-
-		setTimeout(() => {
-			chatbotSendMessage("Write your stupid question normally");
-
-		}, 1000);
 	} else{
 		setTimeout(() => {
 			chatbotSendMessage("Yeah, you now your letters bitch")

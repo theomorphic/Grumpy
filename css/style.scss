@@ -21,14 +21,14 @@ a:hover{
 	font-size: 17px;
 }
 
-@keyframes spin {
-	from {transform:rotate(0deg);}
-	to {transform:rotate(360deg);}
+#grumpy{
+	animation: userShake 1s ease infinite;
 }
 
-
-#grumpy{
-	animation: spin 20s linear 0s infinite;
+@keyframes userShake {
+	50%{
+		transform: rotate(5deg);
+	}
 }
 
 
@@ -45,7 +45,7 @@ a:hover{
 	#chatContainer{
 		display: flex;
 		flex-direction: column;
-		justify-content: baseline;	
+		justify-content: start;	
 
 	}
 
