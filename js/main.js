@@ -110,6 +110,13 @@ function processMessage(){
 
 	}
 
+	if(lowUser == ("Papa Smurf") ||lowUser == "papa smurf"){
+		setTimeout(() => {
+			chatbotSendMessage("Alright. This blue shitbag lives <a href='https://theomorphic.github.io/Papa-Smurf' target='_blank'>right here</a>")
+		}, 2000);
+
+	}
+
 	if(lowUser == "dwarf"||lowUser == "you are dwarf"||lowUser == "you're dwarf"||lowUser == "youre dwarf"||lowUser == "you are a dwarf"||lowUser == "you're a dwarf"||lowUser == "youre a dwarf"||lowUser == "you dwarf"||lowUser == "you a dwarf"||lowUser == "you a dwarf!"||lowUser == "dwarf!"||lowUser == "you are dwarf!"||lowUser == "you are a dwarf!"||lowUser == "you dwarf!"||lowUser == "you are fucking dwarf!"||lowUser == "you are fucking dwarf"){
 		setTimeout(() => {
 			chatbotSendMessage("Wait a minute")

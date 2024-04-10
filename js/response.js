@@ -168,7 +168,7 @@ const table = {
 	"god": "<a href='https://github.com/theomorphic' target='_blank'>This is God</a>",
 	"creator": "<a href='https://theomorphic.github.io/links' target='_blank'>This is Him</a>",
 	"music": "<a href='https://youtu.be/dQw4w9WgXcQ?si=wF6lDfKhCFvHU2Sx' target='_blank'>Listen to this</a>",
-	"nothing": "Nothing in your brain,"
+	"nothing": "Nothing in your brain",
 }
 
 export {table};
